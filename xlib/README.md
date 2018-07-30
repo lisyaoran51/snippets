@@ -1,3 +1,3 @@
 # Xlib usage examples
 
-See details in the [blog post](https://enise.org/gavv/blog/xlib-usage-examples/)
+See details in the [blog post](https://gavv.github.io/blog/xlib-usage-examples/)
