@@ -79,6 +79,8 @@ int main(int argc, char **argv)
     const pa_usec_t start_time = pa_rtclock_now();
     uint64_t n_bytes = 0;
 
+	printf("initialized\n");
+	
     for (;;) {
         char buf[1024];
         ssize_t sz = read(STDIN_FILENO, buf, sizeof(buf));
