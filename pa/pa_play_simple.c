@@ -55,7 +55,7 @@ int main(int argc, char **argv)
     }
 
     pa_sample_spec sample_spec = {};
-    sample_spec.format = PA_SAMPLE_FLOAT32LE;
+    sample_spec.format = PA_SAMPLE_S16LE;
     sample_spec.rate = 44100;
     sample_spec.channels = 2;
 
@@ -91,7 +91,7 @@ int main(int argc, char **argv)
             break;
         }
 
-        print_info(simple, &sample_spec, start_time, n_bytes);
+        //print_info(simple, &sample_spec, start_time, n_bytes);
 
         if (pa_simple_write(simple, buf, (size_t)sz, &error) != 0) {
             fprintf(stderr, "pa_simple_write: %s\n", pa_strerror(error));
